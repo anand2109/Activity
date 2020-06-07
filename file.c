@@ -3,7 +3,8 @@ int main() {
     int num;
     printf("Enter an integer: ");
     scanf("%d", &num);
-
+    if(num <= 0)
+        printf("Invalid input");
     if(num % 2 == 0)
         printf("%d is even.", num);
     else
